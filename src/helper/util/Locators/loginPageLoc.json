@@ -1,0 +1,6 @@
+{
+  "LoginLink": "//span[text()=' Login ']/parent::button",
+  "UserNameTextBox": "//input[@placeholder='Username']",
+  "PasswordTextBox": "//input[@placeholder='Password']",
+  "LoginBtn": "//span[text()='Login']/parent::button"
+}

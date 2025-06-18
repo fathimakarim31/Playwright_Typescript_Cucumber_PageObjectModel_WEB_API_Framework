@@ -1,0 +1,39 @@
+{
+  "name": "playwright-typescript-cucumber-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "debug": "cross-env ENV=prod PWDEBUG=1 DEBUG=pw:api cucumber-js --config=config/cucumber.js",
+    "pretest": "npx ts-node src/helper/report/init.ts",
+    "test": "cross-env ENV=prod FORCE_COLOR=0 cucumber-js --config=config/cucumber.js || true",
+    "posttest": "npx ts-node src/helper/report/report.ts",
+    "test:failed": "cucumber-js -p rerun @rerun.txt"
+  },
+  "keywords": [
+    "cucumber",
+    "cucumber - TS",
+    "playwright-cucumber"
+  ],
+  "author": "KSample project with Playwright and Cucumber",
+  "license": "ISC",
+  "description": "Playwright Typescript Cucumber framework",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.31",
+    "@types/randomstring": "^1.3.0",
+    "@types/string-format": "^2.0.3",
+    "cross-env": "^7.0.3",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "fetch-to-curl": "^0.6.0",
+    "fs-extra": "^11.3.0",
+    "jsonpath": "^1.1.1",
+    "randomstring": "^1.3.1",
+    "string-format": "^2.0.0",
+    "winston": "^3.17.0"
+  }
+}
