@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Playwright_Typescript_Cucumber_PageObjectModel_WEB_API_Framework
-=======
 # Playwright-Cucumber-TypeScript Automation Framework
 
 ## 📌 Overview
